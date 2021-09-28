@@ -43,9 +43,8 @@
             </intent-filter>
 
             <!-- Branch App Links (optional) -->
-            <intent-filter android:autoVerify="true">
+            <!--<intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
@@ -55,7 +54,7 @@
                 <data
                     android:host="raikar.test-app.link"
                     android:scheme="https" />
-            </intent-filter>
+            </intent-filter>-->
 
         </activity>
 
@@ -69,33 +68,8 @@
             android:name="io.branch.sdk.TestMode"
             android:value="true" />
 
-        <!--DeepLink-->
-        <activity android:name=".NormalDeepLinkActivity">
-            <!--<intent-filter>
-                <data android:scheme="https"
-
-                    android:host="normaldeeplink.com">
-                </data>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>-->
-        </activity>
-
-
-        <!--Android app link-->
-        <activity android:name=".AndroidAppLinkActivity">
-            <!--<intent-filter android:autoVerify="true">
-                <data
-                    android:scheme="https"
-                    android:host="normaldeeplink.com">
-                </data>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>-->
-        </activity>
-
+        <activity android:name=".MyOrdersActivity"/>
+        <activity android:name=".MyWishListActivity"/>
     </application>
 
 </manifest>
